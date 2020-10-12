@@ -1,0 +1,31 @@
+div {
+  /*width: 150px;*/
+  height: 150px;
+  display: block;
+  background-color: green;
+
+  /*transition: all .5s ease;
+  transition-delay: .5s;*/
+
+  animation: changeBackground 1.5s ease infinite;
+}
+
+@keyframes changeBackground {
+  0% {
+    background-color: green;
+    width: 100px;
+  }
+  50% {
+    background-color: red;
+    width: 150px;
+  }
+  100% {
+    background-color: green;
+    width: 100px;
+  }
+}
+
+div:hover {
+  /*background-color: red;*/
+  animation-play-state: paused;
+}
